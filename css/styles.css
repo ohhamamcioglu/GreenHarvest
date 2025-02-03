@@ -1,4 +1,4 @@
-* {
+.you-order * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -125,18 +125,19 @@
   color: #141414;
   font-size: 14px;
   white-space: pre-wrap;
+  resize: none;
 }
-.you-order-name-input:hover , .you-order-email-input:hover , .you-order-comment-input:hover{
-    border-color: #7a3145;
-    
+.you-order-name-input:hover,
+.you-order-email-input:hover,
+.you-order-comment-input:hover {
+  border-color: #7a3145;
 }
-.you-order-name-input:focus, .you-order-email-input:focus, .you-order-comment-input:focus{
-    border-color: #7a3145;
-    outline: none;
+.you-order-name-input:focus,
+.you-order-email-input:focus,
+.you-order-comment-input:focus {
+  border-color: #7a3145;
+  outline: none;
 }
-
-
-
 
 .you-order-submit-button {
   color: #fbfbfb;
@@ -156,9 +157,10 @@
   padding-left: 20px;
   padding-right: 20px;
 }
-.you-order-submit-button:hover , .you-order-submit-button:focus{
-    background-color: #d4bfc4;
-    color: #141414;
+.you-order-submit-button:hover,
+.you-order-submit-button:focus {
+  background-color: #d4bfc4;
+  color: #141414;
 }
 .you-order-pic-social-box {
   display: block;
