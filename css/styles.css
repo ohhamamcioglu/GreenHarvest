@@ -110,6 +110,34 @@
   color: #141414;
   font-size: 14px;
 }
+.you-order-email-input:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+.you-order-email-input:not(:placeholder-shown):valid {
+  border-color: green;
+}
+.text-valid,
+.text-invalid {
+  font-size: 14px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  display: none;
+}
+
+.text-valid {
+  color: green;
+}
+
+.text-invalid {
+  color: red;
+}
+.you-order-email-input:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
+}
+.you-order-email-input:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
+}
+
 .you-order-comment-input {
   border: 1px solid #858585;
   width: 295px;
@@ -189,6 +217,18 @@
   width: 295px;
   margin: 0 auto;
   margin-top: 20px;
+}
+.you-order-social-box li {
+  list-style-type: none;
+}
+.you-order-social-li-ing::after,
+.you-order-social-li-face::after {
+  content: " /";
+  color: #fbfbfb;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  margin-left: 8px;
 }
 
 .you-order-social-box-p {
@@ -271,6 +311,11 @@
     padding-left: 14px;
     font-size: 16px;
   }
+  .text-valid,
+  .text-invalid {
+    padding-left: 110px;
+    padding-bottom: 10px;
+  }
   .you-order-comment-input {
     width: 440px;
     height: 96px;
@@ -325,6 +370,11 @@
     line-height: 20px;
     letter-spacing: -0.27px;
   }
+  .you-order-social-li-ing::after,
+.you-order-social-li-face::after { 
+  margin-left: 12px;
+  
+}
 }
 @media screen and (min-width: 1280px) {
   .you-order {
@@ -380,6 +430,11 @@
   }
   .you-order-comment-input {
     width: 428px;
+  }
+  .text-valid,
+  .text-invalid {
+    padding-left: 10px;
+    padding-bottom: 10px;
   }
   .you-order-submit-button {
     width: 428px;

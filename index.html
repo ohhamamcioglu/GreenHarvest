@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-    >
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-    >
-    <link rel="stylesheet" href="./css/styles.css" >
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <main>
@@ -39,7 +39,7 @@
               WILL CONTACT YOU!
             </h3>
 
-            <form >
+            <form>
               <div class="you-order-form-input-box">
                 <input
                   type="text"
@@ -47,23 +47,30 @@
                   id="user-name"
                   class="you-order-name-input"
                   placeholder="Full Name"
-                >
-                <input
-                  type="email"
-                  name="user-email"
-                  id="user-email"
-                  class="you-order-email-input"
-                  placeholder="Email"
-                >
-
-                <textarea                  
+                />
+                <div>
+                  <input
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    class="you-order-email-input"
+                    placeholder="Email"
+                    pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                    required
+                  />
+                  <p class="text-valid">Succes!</p>
+                  <p class="text-invalid">Invalid email, try again</p>
+                </div>
+                <textarea
                   name="user-comment"
                   id="user-comment"
                   class="you-order-comment-input"
                   placeholder="Comment"
                 ></textarea>
 
-                <button class="you-order-submit-button">SEND</button>
+                <button type="submit" class="you-order-submit-button">
+                  SEND
+                </button>
               </div>
             </form>
           </div>
@@ -73,28 +80,52 @@
                 class="you-order-mobile-pic"
                 src="./img/you-order-mobile-pic.jpg"
                 alt="you-order-mobile-pic"
-              >
+              />
               <img
                 class="you-order-desktop-pic"
                 src="./img/you-order-desktop-pic.jpg"
                 alt="you-order-desktop-pic"
-              >
+              />
               <img
                 class="you-order-tablet-pic"
                 src="./img/you-order-tablet-pic.jpg"
                 alt="you-order-tablet-pic"
-              >
+              />
             </div>
             <div class="you-order-social-box">
               <p class="you-order-social-box-p">
                 Follow us on our social networks:
               </p>
               <div class="you-order-social-icon-box">
-                <a class="you-order-social" href="#"> INSTAGRAM </a>
-                <span class="you-order-social"> / </span>
-                <a class="you-order-social" href="#"> FACEBOOK </a>
-                <span class="you-order-social"> / </span>
-                <a class="you-order-social" href="#"> YOUTUBE </a>
+                <ul class="you-order-social-icon-box">
+                  <li class="you-order-social-li-ing">
+                    <a
+                      class="you-order-social"
+                      href="https://www.instagram.com/goit.turkiye/"
+                    >
+                      INSTAGRAM 
+                    </a>
+                    
+                  </li>
+
+                  <li class="you-order-social-li-face">
+                    <a
+                      class="you-order-social"
+                      href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/"
+                    >
+                      FACEBOOK
+                    </a>
+                  </li>
+
+                  <li class="you-order-social-li-yt">
+                    <a
+                      class="you-order-social"
+                      href="https://m.youtube.com/@GoITTurkey"
+                    >
+                      YOUTUBE
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
